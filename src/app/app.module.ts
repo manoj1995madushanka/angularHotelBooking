@@ -25,6 +25,7 @@ import { RestaurantComponent } from './food-and-beverage/restaurant/restaurant.c
 import { BarsComponent } from './food-and-beverage/bars/bars.component';
 
 import {AppRoutingModule} from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {AppRoutingModule} from './app-routing.module';
     SignupComponent,
     FoodAndBeverageComponent,
     RestaurantComponent,
-    BarsComponent
+    BarsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
