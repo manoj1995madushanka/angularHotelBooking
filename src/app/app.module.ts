@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 import { AppComponent } from './app.component';
 
 import {MaterialModule} from './material/material.module';
@@ -26,6 +28,11 @@ import { BarsComponent } from './food-and-beverage/bars/bars.component';
 
 import {AppRoutingModule} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -48,13 +55,18 @@ import { HomeComponent } from './home/home.component';
     FoodAndBeverageComponent,
     RestaurantComponent,
     BarsComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavtabsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSidenavModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
