@@ -5,11 +5,19 @@
 }
 
 .logo{
-  width:17%;
-  height: 17%;
+  width:10%;
+  height: 10%;
 
 }
 
 mat-toolbar{
   height: 96px;
+}
+
+.icon svg{
+  fill:teal;
+}
+
+.icon{
+  color:teal;
 }
